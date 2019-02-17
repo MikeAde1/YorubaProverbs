@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YORUBA PROVERBS 1.0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="@string/the_application_is_a_digital_resource_for_yoruba_proverbs_containing_over_600_proverbs_these_proverbs_have_been_extracted_from_the_book_yoruba_proverbs_by_oyekan_owomoyela"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any feedback, comment or addition can be sent to michael.adeneye@yahoo.com"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "168788359549",
+    "firebase_url": "https://yorubaproverbs-2a946.firebaseio.com",
+    "project_id": "yorubaproverbs-2a946",
+    "storage_bucket": "yorubaproverbs-2a946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168788359549:android:87cebddc83086e8c",
+        "android_client_info": {
+          "package_name": "example.yorubaproverbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168788359549-o7gd60sc8q07smo2ckvbald1mrtvjpjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.yorubaproverbs",
+            "certificate_hash": "01dc56228718c8d657dd0df09750991f6a08f8ca"
+          }
+        },
+        {
+          "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD96QUxnVIMdEQ2IrqFzLMsRvLwBXV6QNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

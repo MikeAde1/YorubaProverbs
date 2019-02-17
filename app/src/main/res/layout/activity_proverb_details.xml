@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProverbDetails">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+       <TextView
+           android:layout_marginTop="5dp"
+           android:id="@+id/tvProverb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#d95120"
+           android:textSize="17sp"
+           android:text="@string/proverb"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="#c26340"
+            android:layout_marginBottom="5dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentPadding="7dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextVkjkjkshjsiew"
+                android:textSize="17sp"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/tvTrans"
+            android:layout_gravity="end"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d95120"
+            android:text="Literal Translation"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+        <View
+            android:layout_gravity="end"
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:background="#c26340"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:contentPadding="7dp">
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextViewjjkfkfkjjkfjfkj"
+                android:textSize="17sp"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/tvExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d95120"
+            android:textSize="17sp"
+            android:text="Explanation &amp; usage"
+            />
+        <View
+            android:layout_width="88dp"
+            android:layout_height="1dp"
+            android:background="#c26340"
+            android:layout_marginBottom="5dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:contentPadding="7dp">
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="17sp"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

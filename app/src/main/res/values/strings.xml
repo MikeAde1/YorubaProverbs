@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Yorùbá Proverbs</string>
+    <string name="title_name">Yorùbá Proverbs - Òwe Yorùbá</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="about">About</string>
+    <string name="all">All</string>
+    <string name="home">Home</string>
+    <string name="home_text">Press the <b><i>search</i></b> button to search for your proverb of interest.</string>
+    <string name="action_search">Search</string>
+    <string name="the_good_pesron">The Good Person</string>
+    <string name="the_good_life">The Good Life</string>
+    <string name="relationship">Relationship</string>
+    <string name="human_nature">Human Nature</string>
+    <string name="rights_and_responsibilities">Rights and Responsibilities</string>
+    <string name="truism">Truism</string>
+    <string name="explanation_usage"><![CDATA[Explanation & Usage]]></string>
+    <string name="proverb">Proverb</string>
+    <string name="the_application_is_a_digital_resource_for_yoruba_proverbs_containing_over_600_proverbs_these_proverbs_have_been_extracted_from_the_book_yoruba_proverbs_by_oyekan_owomoyela">The Application is a digital Resource for Yoruba proverbs containing over 600 proverbs. These proverbs have been extracted from the book \'Yoruba Proverbs\' by <b>Oyekan Owomoyela</b>.</string>
+</resources>
