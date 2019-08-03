@@ -52,7 +52,7 @@ public class Home extends android.support.v4.app.Fragment {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), CategorizedList.class).putExtra("name",getString(R.string.the_good_pesron)));
+                startActivity(new Intent(getContext(), CategorizedList.class).putExtra("name", "The Good Person"));
 /*
                 dbref.addValueEventListener(new ValueEventListener() {
                     @Override

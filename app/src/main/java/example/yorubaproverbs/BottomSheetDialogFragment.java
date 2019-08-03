@@ -10,7 +10,6 @@ public class BottomSheetDialogFragment extends android.support.design.widget.Bot
     public int getTheme() {
         return R.style.BottomSheetDialogTheme;
     }
-
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

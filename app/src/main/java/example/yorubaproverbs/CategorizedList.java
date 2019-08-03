@@ -37,9 +37,11 @@ public class CategorizedList extends AppCompatActivity  {
     private static int number;
     DatabaseReference dbref;
 
-    LinearLayout linearLayout;
+    private LinearLayout linearLayout;
+    ProgressBar progressBar;
     private RecyclerView recyclerView;
     private ProverbListAdapter proverbListAdapter;
+
     private static List<ProverbData> proverbDataList = new ArrayList<>();
     String category;
 
@@ -53,27 +55,28 @@ public class CategorizedList extends AppCompatActivity  {
 
         assert getSupportActionBar() != null;
 
-       /* getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        /* getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_if_arrow_back_1063891);*/
         //getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.rgb(248,253,254)));
         //getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         getSupportActionBar().setElevation(0);
 
-         category = getIntent().getStringExtra("name");
+        category = getIntent().getStringExtra("name");
         getSupportActionBar().setTitle(Html.fromHtml("<font color=\"#FFFFFF\">"+ category));
 
-
+        progressBar = findViewById(R.id.pg);
         linearLayout = findViewById(R.id.waiting);
-        linearLayout.setVisibility(View.VISIBLE);
 
         recyclerView = findViewById(R.id.categoryList);
         recyclerView.setHasFixedSize(true);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(CategorizedList.this);
         recyclerView.setLayoutManager(mLayoutManager);
+
         setUpAdapter();
         fetchFromDb();
     }
+
 
     private void setUpAdapter() {
         proverbListAdapter = new ProverbListAdapter(CategorizedList.this, proverbDataList, new ProverbListAdapter.Callback() {
@@ -96,10 +99,11 @@ public class CategorizedList extends AppCompatActivity  {
     }
 
     private void fetchFromDb() {
+        proverbDataList.clear();
+
         dbref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                proverbDataList.clear();
                 switch (category) {
                     case "The Good Person":
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
@@ -174,7 +178,6 @@ public class CategorizedList extends AppCompatActivity  {
         });
         linearLayout.setVisibility(View.GONE);
         recyclerView.setVisibility(View.VISIBLE);
-
     }
 
     public static class DialogFragment extends BottomSheetDialogFragment{
@@ -197,4 +200,6 @@ public class CategorizedList extends AppCompatActivity  {
             return rootview;
         }
     }
+
+
 }

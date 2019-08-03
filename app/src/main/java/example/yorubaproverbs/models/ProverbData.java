@@ -9,8 +9,8 @@ public class ProverbData {
         return Content;
     }
 
-    public void setContent(String content) {
-        Content = content;
+    public void setContent(String Content) {
+        this.Content = Content;
     }
 
     public String getContext() {
@@ -37,5 +37,5 @@ public class ProverbData {
         Translation = usage;
     }
 
-    String Content, Context, Explanation, Translation;
+    private String Content, Context, Explanation, Translation;
 }
