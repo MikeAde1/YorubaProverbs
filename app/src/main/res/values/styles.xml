@@ -26,5 +26,7 @@
         <item name="android:windowIsFloating">false</item>
         <item name="bottomSheetStyle">@style/BottomSheet</item>
     </style>
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
 
 </resources>

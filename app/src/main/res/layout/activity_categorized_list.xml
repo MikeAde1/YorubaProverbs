@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategorizedList">
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/categoryList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:visibility="invisible"/>
+        android:visibility="gone"/>
+
 
     <LinearLayout
         android:id="@+id/waiting"
@@ -19,8 +21,13 @@
         android:layout_centerInParent="true">
 
         <ProgressBar
+            android:id="@+id/pg"
+            android:indeterminate="true"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
     </LinearLayout>
+
+
+
 </RelativeLayout>
