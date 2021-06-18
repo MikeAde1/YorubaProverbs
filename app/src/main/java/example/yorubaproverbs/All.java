@@ -1,16 +1,16 @@
 package example.yorubaproverbs;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +32,7 @@ import example.yorubaproverbs.adapter.ProverbListAdapter;
 import example.yorubaproverbs.models.ProverbData;
 
 
-public class All extends android.support.v4.app.Fragment {
+public class All extends Fragment {
     private static List<ProverbData> proverbDataList = new ArrayList<>();
     private ProverbListAdapter proverbListAdapter;
     private RecyclerView recyclerView;
