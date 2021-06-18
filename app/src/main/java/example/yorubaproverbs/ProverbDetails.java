@@ -2,15 +2,9 @@ package example.yorubaproverbs;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import example.yorubaproverbs.models.ProverbData;
 
 public class ProverbDetails extends AppCompatActivity {
     private TextView content, translation, explanation, tvProv, tvTrans, tvExp;
