@@ -70,15 +70,17 @@ pipeline {
                 }
             }
         }
-        stage('Publish') {
+        stage('Build apk') {
             when { expression { return !isDeployCandidate() } }
             steps {
-                VARIANT = getBuildType()
-                // Archive the APKs so that they can be downloaded from Jenkins
-                archiveArtifacts "**/${appName}-${VARIANT}.apk"
-                // Archive the ARR and POM so that they can be downloaded from Jenkins
-                // archiveArtifacts "**/${APP_NAME}-${BUILD_TYPE}.aar, **/*pom-   default.xml*"
-
+                echo 'Building'
+                script {
+                    VARIANT = getBuildType()
+                    // Archive the APKs so that they can be downloaded from Jenkins
+                    archiveArtifacts "**/${appName}-${VARIANT}.apk"
+                    // Archive the ARR and POM so that they can be downloaded from Jenkins
+                    // archiveArtifacts "**/${APP_NAME}-${BUILD_TYPE}.aar, **/*pom-   default.xml*"
+                }
             }
         }
         stage('Deploy App to Store') {
