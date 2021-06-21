@@ -1,5 +1,5 @@
 FROM openjdk:8
-
+USER root
 WORKDIR project/
 
 # Install Build Essentials
