@@ -1,6 +1,5 @@
-FROM openjdk:8
+FROM jenkins/jenkins:lts
 USER root
-WORKDIR project/
 
 # Install Build Essentials
 RUN apt-get update \
