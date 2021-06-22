@@ -26,4 +26,5 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;30.0.3" \
     "platforms;android-${ANDROID_VERSION}" \
     "platform-tools"
 
+USER jenkins
 CMD ["/bin/bash"]
