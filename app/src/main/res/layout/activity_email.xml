@@ -8,6 +8,11 @@
     android:padding="10dp"
     tools:context=".EmailActivity">
 
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/emailComposeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <EditText
             android:id="@+id/fname"
             android:layout_width="match_parent"
@@ -17,6 +22,7 @@
             android:elevation="1dp"
             android:hint="Full Name"
             android:inputType="text"
+            android:visibility="gone"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textSize="16sp" />
@@ -30,6 +36,7 @@
             android:elevation="1dp"
             android:hint="Proverb"
             android:inputType="text"
+            android:visibility="gone"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
@@ -41,6 +48,7 @@
             android:background="#ffffff"
             android:elevation="1dp"
             android:hint="Explanation"
+            android:visibility="gone"
             android:inputType="text"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
@@ -52,6 +60,7 @@
             android:layout_margin="10dp"
             android:background="#ffffff"
             android:elevation="1dp"
+            android:visibility="gone"
             android:hint="Translation"
             android:inputType="text"
             android:paddingLeft="5dp"
@@ -65,6 +74,7 @@
             android:layout_margin="10dp"
             android:background="@color/colorPrimaryDark"
             android:text="Send"
+            android:visibility="gone"
             android:onClick="send"
             android:textAllCaps="false"
             android:textColor="#ffffff"

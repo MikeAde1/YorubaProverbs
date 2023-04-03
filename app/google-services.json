@@ -33,20 +33,50 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168788359549:android:ed91cba5f7f234bd353414",
+        "android_client_info": {
+          "package_name": "example.yorubaproverbs.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168788359549-3h5lh5iqp119pi6a1ke223n7gagh6j60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.yorubaproverbs.debug",
+            "certificate_hash": "c13aff90762d3223b6f800578b0082a37f20ae37"
+          }
         },
-        "ads_service": {
-          "status": 2
+        {
+          "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD96QUxnVIMdEQ2IrqFzLMsRvLwBXV6QNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

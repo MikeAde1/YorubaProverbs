@@ -1,5 +1,4 @@
-<resources>
-    <string name="app_name">Yorùbá Proverbs</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="title_name">Yorùbá Proverbs - Òwe Yorùbá</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="action_settings">Settings</string>
@@ -18,7 +17,8 @@
     <string name="explanation_usage"><![CDATA[Explanation & Usage]]></string>
     <string name="proverb">Proverb</string>
     <string name="disclaimer">The Application is a digital Resource for Yoruba proverbs containing over 600 proverbs. These proverbs have been extracted from the book \'Yoruba Proverbs\' by <b>Oyékàn Owómóyèlá</b>.</string>
-    <string name="feedback">Any feedback, comment or addition can be sent to michael.adeneye@yahoo.com</string>
+    <string name="feedback" tools:ignore="Typos">Any feedback, comment or addition can be sent to michaeladeneye1@gmail.com</string>
     <string name="title">YORUBA PROVERBS 1.0</string>
     <string name="the_good_person">The Good Person\n<b>(Ènìyàn Rere)</b></string>
+    <string name="title_activity_sample_compose">SampleComposeActivity</string>
 </resources>

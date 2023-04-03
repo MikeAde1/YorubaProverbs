@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:minHeight="370dp"
@@ -30,6 +30,7 @@
             android:id="@+id/proverb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
             android:text="trysiusfososbfsoivvkzvnkzv"
             android:textSize="15sp"/>
     </androidx.cardview.widget.CardView>
@@ -60,6 +61,7 @@
             android:id="@+id/meaning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
             android:text="trysiusfososbfsoivvkzvnkzv"
             android:textSize="15sp"/>
     </androidx.cardview.widget.CardView>
@@ -83,7 +85,7 @@
         app:contentPadding="7dp"
         app:cardBackgroundColor="#8da13131"
         android:foregroundGravity="center"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/explanation"
             android:layout_width="wrap_content"
