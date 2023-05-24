@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout android:id="@+id/relativeLayout"
+<RelativeLayout
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <LinearLayout
+    <LinearLayout
+            android:id="@+id/coverVg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            android:id="@+id/mail"
             android:visibility="gone">
 
             <EditText
@@ -77,29 +78,31 @@
 
         </LinearLayout>
 
-
-        <android.support.v7.widget.RecyclerView
+        <!--<androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_add_black_24dp"
+            android:src="@drawable/ic_add_black_24dp"
             android:layout_marginBottom="68dp"
             android:layout_marginEnd="@dimen/fab_margin"
-            android:layout_marginRight="@dimen/fab_margin"
             app:backgroundTint="@color/colorPrimaryDark"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             app:fabSize="auto"
-            android:layout_alignParentEnd="true" />
+            android:contentDescription="lkkl" />-->
 
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/allComposeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-        <LinearLayout
+    <!--<LinearLayout
             android:id="@+id/searching"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,5 +114,5 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp" />
 
-        </LinearLayout>
+        </LinearLayout>-->
     </RelativeLayout>

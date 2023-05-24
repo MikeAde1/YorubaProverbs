@@ -2,10 +2,10 @@ package example.yorubaproverbs;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetDialog;
+import androidx.annotation.NonNull;
+//import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class BottomSheetDialogFragment extends android.support.design.widget.BottomSheetDialogFragment {
+/*public class BottomSheetDialogFragment extends com.google.android.material.bottomsheet.BottomSheetDialogFragment {
     @Override
     public int getTheme() {
         return R.style.BottomSheetDialogTheme;
@@ -15,4 +15,4 @@ public class BottomSheetDialogFragment extends android.support.design.widget.Bot
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         return new BottomSheetDialog(requireContext(), getTheme());
     }
-}
+}*/

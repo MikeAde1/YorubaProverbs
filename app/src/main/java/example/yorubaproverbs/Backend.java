@@ -13,7 +13,5 @@ public class Backend extends Application {
         super.onCreate();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseDatabase.setPersistenceEnabled(true);
-
-
     }
 }
