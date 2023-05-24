@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "168788359549",
+    "firebase_url": "https://yorubaproverbs-2a946.firebaseio.com",
+    "project_id": "yorubaproverbs-2a946",
+    "storage_bucket": "yorubaproverbs-2a946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168788359549:android:87cebddc83086e8c",
+        "android_client_info": {
+          "package_name": "example.yorubaproverbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168788359549-o7gd60sc8q07smo2ckvbald1mrtvjpjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.yorubaproverbs",
+            "certificate_hash": "01dc56228718c8d657dd0df09750991f6a08f8ca"
+          }
+        },
+        {
+          "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD96QUxnVIMdEQ2IrqFzLMsRvLwBXV6QNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168788359549:android:ed91cba5f7f234bd353414",
+        "android_client_info": {
+          "package_name": "example.yorubaproverbs.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168788359549-3h5lh5iqp119pi6a1ke223n7gagh6j60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "example.yorubaproverbs.debug",
+            "certificate_hash": "c13aff90762d3223b6f800578b0082a37f20ae37"
+          }
+        },
+        {
+          "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD96QUxnVIMdEQ2IrqFzLMsRvLwBXV6QNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168788359549-0jmmu4agfokh8gopmcioft5bb1o4emhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
