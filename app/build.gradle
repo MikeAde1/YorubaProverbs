@@ -1,7 +1,12 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'androidx.navigation.safeargs.kotlin'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.dagger.hilt.android'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
+}
 
 
 android {
@@ -10,8 +15,8 @@ android {
         applicationId "example.yorubaproverbs"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         vectorDrawables.useSupportLibrary = true
     }
@@ -50,19 +55,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'),
                     'proguard-rules.pro', 'proguard-rules-test.pro'
 
-            resValue "string", "app_name", "Yoruba_Proverbs_Debug"
+            resValue "string", "app_name", "Yoruba Proverbs"
         }
-
-        /*release {
-            debuggable false
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
-                    'proguard-rules.pro'
-
-            resValue "string", "app_name", "Kuda"
-        }*/
 
         release {
             minifyEnabled false
@@ -72,24 +66,52 @@ android {
     }
 }
 
+// Allow references to generated code
+kapt {
+    correctErrorTypes true
+}
+
 dependencies {
+    def lifecycle_version = "2.6.1"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation platform('com.google.firebase:firebase-bom:28.1.0')
-    //implementation 'com.google.firebase:firebase-core:28.1.0'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    // implementation 'com.google.firebase:firebase-core:28.1.0'
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-database'
-    implementation 'androidx.compose.material3:material3:1.1.0-beta01'
-    implementation 'com.google.android.material:material:1.8.0'
-    //implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+    // this analytics implementation is not working, need to check why
+    // implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics:21.2.2'
+
+    implementation 'androidx.compose.material3:material3:1.2.0-alpha01'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation 'androidx.activity:activity-compose:1.7.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+
+    implementation 'androidx.activity:activity-compose:1.7.1'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // ViewModel utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    // Lifecycle utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
+
+    implementation "androidx.core:core-splashscreen:1.0.1"
+
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
 
     // Compose
     def composeBom = platform('androidx.compose:compose-bom:2023.01.00')
@@ -109,23 +131,12 @@ dependencies {
     def accompanist_version = "0.28.0"
     implementation "com.google.accompanist:accompanist-pager:$accompanist_version" // Pager
     implementation "com.google.accompanist:accompanist-pager-indicators:$accompanist_version" // Pager Indicators
-
     implementation "com.google.accompanist:accompanist-themeadapter-material:$accompanist_version"
 
-    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version" //check usage if necessary
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version" //duplicate to be removed
-
-    /*androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
-    androidTestImplementation "androidx.test.espresso:espresso-contrib:3.5.1"
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
-    androidTestImplementation "androidx.test.espresso:espresso-intents:3.5.1"
-    androidTestImplementation "androidx.test.ext:junit:1.1.5"
-    androidTestImplementation "androidx.test.uiautomator:uiautomator:2.2.0"
-    androidTestImplementation "androidx.work:work-testing:2.7.1"
-    androidTestImplementation "com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:4.0.0"
-    androidTestImplementation "com.google.truth:truth:1.1.3"
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4"
-    testImplementation "junit:junit:4.13.2"*/
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
