@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProverbDetails">
+    tools:context=".presentation.searchdetails.ProverbDetails">
 
     <LinearLayout
         android:padding="10dp"
