@@ -1,4 +1,4 @@
-package example.yorubaproverbs.ui.theme
+package example.yorubaproverbs.presentation.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

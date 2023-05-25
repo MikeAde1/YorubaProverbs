@@ -1,4 +1,4 @@
-package example.yorubaproverbs;
+package example.yorubaproverbs.presentation.splashscreen;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
@@ -6,6 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import dagger.hilt.android.AndroidEntryPoint;
+import example.yorubaproverbs.presentation.dashboard.MainActivity;
+import example.yorubaproverbs.R;
+
+@AndroidEntryPoint
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -21,7 +26,7 @@ public class SplashScreen extends AppCompatActivity {
             }
             @Override
             public void onFinish() {
-                startActivity(new Intent(SplashScreen.this, Main2Activity.class));
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
                 finish();
             }
         }.start();

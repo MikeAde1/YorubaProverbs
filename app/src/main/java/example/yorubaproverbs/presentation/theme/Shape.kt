@@ -1,4 +1,4 @@
-package example.yorubaproverbs.ui.theme
+package example.yorubaproverbs.presentation.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

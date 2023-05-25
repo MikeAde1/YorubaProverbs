@@ -4,7 +4,10 @@ import android.app.Application;
 
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Backend extends Application {
+import dagger.hilt.android.HiltAndroidApp;
+
+@HiltAndroidApp
+public class ProverbsApp extends Application {
  FirebaseDatabase firebaseDatabase;
 
 

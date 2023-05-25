@@ -1,10 +1,11 @@
-package example.yorubaproverbs;
+package example.yorubaproverbs.presentation.searchdetails;
 
 import android.content.Intent;
 import android.graphics.Typeface;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import example.yorubaproverbs.R;
 
 public class ProverbDetails extends AppCompatActivity {
     private TextView content, translation, explanation, tvProv, tvTrans, tvExp;
