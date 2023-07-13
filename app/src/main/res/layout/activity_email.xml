@@ -1,86 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".EmailActivity">
+    tools:context=".presentation.email.EmailActivity">
 
         <androidx.compose.ui.platform.ComposeView
             android:id="@+id/emailComposeView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <EditText
-            android:id="@+id/fname"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:elevation="1dp"
-            android:hint="Full Name"
-            android:inputType="text"
-            android:visibility="gone"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/edProverb"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:elevation="1dp"
-            android:hint="Proverb"
-            android:inputType="text"
-            android:visibility="gone"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
-
-        <EditText
-            android:id="@+id/edTranslation"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:elevation="1dp"
-            android:hint="Explanation"
-            android:visibility="gone"
-            android:inputType="text"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
-
-        <EditText
-            android:id="@+id/edExplanation"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:elevation="1dp"
-            android:visibility="gone"
-            android:hint="Translation"
-            android:inputType="text"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
-
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="Send"
-            android:visibility="gone"
-            android:onClick="send"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="17sp" />
-
-    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
