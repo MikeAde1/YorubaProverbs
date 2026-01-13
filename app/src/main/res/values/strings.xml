@@ -8,17 +8,31 @@
     <string name="home">Home</string>
     <string name="home_text">Press the <b><i>search</i></b> button to search for your proverb of interest.</string>
     <string name="action_search">Search</string>
-    <!--    <string name="the_good_pesron">The Good Person</string>-->
-    <string name="the_good_life">The Good Life\n(Ayé Rere)</string>
-    <string name="relationship">Relationship\n<b>(Ìbáṣepọ̀)</b></string>
-    <string name="human_nature">Human Nature\n<b>(Ìwà Eniyan)</b></string>
-    <string name="rights_and_responsibilities">Rights and Responsibilities\n<b>(Etọ́ ati ojúṣe)</b></string>
-    <string name="truism">Truism\n(Òtítọ́)</string>
+    <string name="the_good_person">The Good Person</string>
+    <string name="the_good_person_translation"><b>(Ènìyàn Rere)</b></string>
+    <string name="the_good_life">The Good Life</string>
+    <string name="the_good_life_translation"><b>(Ayé Rere)</b></string>
+    <string name="relationship">Relationship</string>
+    <string name="relationship_translation"><b>(Ìbáṣepọ̀)</b></string>
+    <string name="human_nature">Human Nature</string>
+    <string name="human_nature_translation"><b>(Ìwà Eniyan)</b></string>
+    <string name="rights_and_responsibilities">Rights and Responsibilities</string>
+    <string name="rights_translation"><b>(Etọ́ ati ojúṣe)</b></string>
+    <string name="truism">Truism</string>
+    <string name="truism_translation">(Òtítọ́)</string>
     <string name="explanation_usage"><![CDATA[Explanation & Usage]]></string>
     <string name="proverb">Proverb</string>
     <string name="disclaimer">The Application is a digital Resource for Yoruba proverbs containing over 600 proverbs. These proverbs have been extracted from the book \'Yoruba Proverbs\' by <b>Oyékàn Owómóyèlá</b>.</string>
     <string name="feedback" tools:ignore="Typos">Any feedback, comment or addition can be sent to michaeladeneye1@gmail.com</string>
     <string name="title">YORUBA PROVERBS 1.0</string>
-    <string name="the_good_person">The Good Person\n<b>(Ènìyàn Rere)</b></string>
     <string name="title_activity_sample_compose">SampleComposeActivity</string>
+    <string name="email_description">Help us by sending any proverb that you notice is absent in this digital catalogue and it is going to be added to the list of proverbs in the application.</string>
+    <string name="email_address" tools:ignore="Typos">michaeladeneye1@gmail.com</string>
+    <string name="literal_translation">Literal Translation</string>
+    <string name="iwa_rere">ìwà rere</string>
+    <string name="aye_rere">ìgbé ayé rere</string>
+    <string name="ibasepo">Ìbáṣepọ̀</string>
+    <string name="iwa_eda">Ìwà ẹ̀dá</string>
+    <string name="eto">ẹ̀tọ́</string>
+    <string name="otito">òtítọ́</string>
 </resources>
