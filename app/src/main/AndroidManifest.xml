@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".ProverbsApp"
+        android:name=".Backend"
         android:allowBackup="true"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -15,19 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_provider_paths" />
-        </provider>
         <activity
-            android:name=".presentation.splashscreen.SplashScreen"
+            android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
+
             <!-- This was set so as to make the toolbar usable! -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,22 +28,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.dashboard.MainActivity"
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".Main2Activity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".presentation.searchdetails.ProverbDetails"
+            android:name=".ProverbDetails"
             android:exported="false"
-            android:parentActivityName=".presentation.dashboard.MainActivity" />
+            android:parentActivityName=".Main2Activity" />
         <activity
-            android:name=".presentation.categorizedlist.CategorizedListActivity"
+            android:name=".CategorizedList"
             android:exported="false"
-            android:parentActivityName=".presentation.dashboard.MainActivity"
-             />
+            android:parentActivityName=".Main2Activity"
+            tools:targetApi="jelly_bean" />
         <activity
-            android:name=".presentation.email.EmailActivity"
+            android:name=".EmailActivity"
             android:exported="false"
-            android:parentActivityName=".presentation.dashboard.MainActivity" />
+            android:parentActivityName=".Main2Activity" />
     </application>
 
 </manifest>
